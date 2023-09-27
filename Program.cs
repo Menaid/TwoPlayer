@@ -4,7 +4,6 @@ Console.WriteLine("Hej! Välkommen till ett spel med sten, sax, påse.");
 Console.WriteLine("Välj om du/ni vill spela 1 spelare eller 2 spelare.");
 
 string val = Console.ReadLine();
-var Random random1 = new Random();
 
 while (val != "1" || val != "2")
 {
