@@ -24,7 +24,7 @@ List<string> antalSpelare = new List<string>();
 string singelplayer = "1";
 string multiplayer = "2";
 
-
+;
 spelare spelare1 = new spelare();
 spelare spelare2 = new spelare();
 
