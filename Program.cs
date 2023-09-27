@@ -157,10 +157,46 @@ while (true)
     if (firstPlayer.points > secondPlayer.points)
     {
         Console.WriteLine("Grattis " + firstPlayer.name + " vann.");
+        string tfour = "///////////";
+        string five = " /////////";
+        string one = " ///   ///";
+        string seven = "   /////";
+        string six = "  ///////";
+        string two = "///// /////";
+        string eight = "    ///";
+        string nine = "     /";
+        Console.WriteLine(one);
+        Console.WriteLine(two);
+        Console.WriteLine(tfour);
+        Console.WriteLine(tfour);
+        Console.WriteLine(five);
+        Console.WriteLine(six);
+        Console.WriteLine(seven);
+        Console.WriteLine(eight);
+        Console.WriteLine(nine);
+        Console.ReadKey();
     }
     else if (secondPlayer.points > firstPlayer.points)
     {
         Console.WriteLine("Grattis " + secondPlayer.name + " vann.");
+        string tfour = "///////////";
+        string five = " /////////";
+        string one = " ///   ///";
+        string seven = "   /////";
+        string six = "  ///////";
+        string two = "///// /////";
+        string eight = "    ///";
+        string nine = "     /";
+        Console.WriteLine(one);
+        Console.WriteLine(two);
+        Console.WriteLine(tfour);
+        Console.WriteLine(tfour);
+        Console.WriteLine(five);
+        Console.WriteLine(six);
+        Console.WriteLine(seven);
+        Console.WriteLine(eight);
+        Console.WriteLine(nine);
+        Console.ReadKey();
     }
     else
     {
