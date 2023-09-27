@@ -1,15 +1,26 @@
 ﻿using TwoPlayer;
 
-Console.WriteLine("Hej! Välkommen till ett spel med sten, sax, påse. Välj om du/ni vill spela 1 spelare eller 2 spelare");
+Console.WriteLine("Hej! Välkommen till ett spel med sten, sax, påse.");
+Console.WriteLine("Välj om du/ni vill spela 1 spelare eller 2 spelare.");
+
 string val = Console.ReadLine();
-if(val != "1" || val != "2")
+var Random random1 = new Random();
+
+while (val != "1" || val != "2")
 {
-    Console.WriteLine("Fel inmatning, vänligen angen antigen 1 eller 2");
+    Console.WriteLine("Fel inmatning, ange antigen 1 eller 2.");
 }
-else
+
+while (val == "1" || val == "2")
 {
-Console.WriteLine("Vad heter du/ni?");
+    Console.WriteLine("Vänligen ange vilket namn spelare 1 har.");
+   var spelare1 = Console.ReadLine();
+    Console.WriteLine("Vänligen ange nu vilket namn spelare 2 har.");
+    var spelare2 = Console.ReadLine();
 }
+
+List<string> antalSpelare = new List<string>();
+
 string singelplayer = "1";
 string multiplayer = "2";
 

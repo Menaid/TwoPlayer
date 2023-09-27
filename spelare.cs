@@ -8,6 +8,7 @@ namespace TwoPlayer
 {
     public class spelare
     {
-        public string namm;
+        public string namm(Console.ReadLine());
+        
     }
 }
