@@ -1,12 +1,11 @@
-﻿using TwoPlayer;
-
-Console.WriteLine("Hej! Välkommen till ett spel med sten, sax, påse.");
+﻿Console.WriteLine("Hej! Välkommen till ett spel med sten, sax, påse.");
 Console.WriteLine("Välj om du/ni vill spela 1 spelare eller 2 spelare.");
 
-string val = Console.ReadLine();
+string val = string.Empty;
 bool alternativ = true;
 while (alternativ)
 {
+    val = Console.ReadLine();
     if (val == "1" || val == "2")
     {
         alternativ = false;
@@ -24,12 +23,14 @@ while (OneOrTwo)
     if (val == "1")
     {
         Console.WriteLine("Vänligen ange vilket namn spelare 1 har.");
-        spelare spelare1 = new spelare();
+        string spelare1 = Console.ReadLine();
     }
     else if (val == "2")
     {
+        Console.WriteLine("Vänligen ange vilket namn spelare 1 har.");
+        string spelare1 = Console.ReadLine();
         Console.WriteLine("Vänligen ange nu vilket namn spelare 2 har.");
-        spelare spelare2 = new spelare();
+        string spelare2 = Console.ReadLine();
     }
     OneOrTwo = false;
 }
