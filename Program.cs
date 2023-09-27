@@ -36,6 +36,7 @@ while (OneOrTwo)
     {
         Console.WriteLine("Vänligen ange vilket namn spelare 1 har.");
         spelare1 = new spelare(Console.ReadLine());
+        spelare2 = new spelare("Bot", true);
     }
     else if (val == "2")
     {
@@ -47,11 +48,6 @@ while (OneOrTwo)
     }
     OneOrTwo = false;
 }
-
-List<string> antalSpelare = new List<string>();
-
-//string singelplayer = "1";
-//string multiplayer = "2";
 
 Random random = new Random();
 
@@ -70,4 +66,4 @@ else
     firstPlayer = spelare2;
     secondPlayer = spelare1;
 }
-Console.WriteLine("Spelare " + firstPlayer.namn + " börjar.");
+Console.WriteLine("Spelare " + firstPlayer.name + " börjar.");

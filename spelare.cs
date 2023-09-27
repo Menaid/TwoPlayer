@@ -2,10 +2,13 @@
 {
     public class spelare
     {
-        public string? namn;
-        public spelare(string namn)
+        public string? name;
+        public int points;
+        public bool isBot;
+        public spelare(string name, bool isBot = false)
         {
-            this.namn = namn;
+            this.name = name;
+            this.isBot = isBot;
         }
     }
 
