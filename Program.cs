@@ -1,7 +1,17 @@
-﻿Console.WriteLine("Hej! Välkommen till ett spel med sten, sax, påse.");
+﻿using TwoPlayer;
+
+Console.WriteLine("Hej! Välkommen till ett spel med sten, sax, påse.");
 Console.WriteLine("Välj om du/ni vill spela 1 spelare eller 2 spelare.");
 
+spelare spelare1 = null;
+spelare spelare2 = null;
+
 string val = string.Empty;
+string drag1 = string.Empty;
+string drag2 = string.Empty;
+int points1 = 0;
+int points2 = 0;
+
 bool alternativ = true;
 while (alternativ)
 {
@@ -14,50 +24,50 @@ while (alternativ)
     {
         Console.WriteLine("Ange antigen en 1:a eller 2:a.");
     }
+
 }
-//var Random random1 = new Random();
+
 bool OneOrTwo = true; ;
+bool pve = true;
 
 while (OneOrTwo)
 {
     if (val == "1")
     {
         Console.WriteLine("Vänligen ange vilket namn spelare 1 har.");
-        string spelare1 = Console.ReadLine();
+        spelare1 = new spelare(Console.ReadLine());
     }
     else if (val == "2")
     {
         Console.WriteLine("Vänligen ange vilket namn spelare 1 har.");
-        string spelare1 = Console.ReadLine();
+        spelare1 = new spelare(Console.ReadLine());
         Console.WriteLine("Vänligen ange nu vilket namn spelare 2 har.");
-        string spelare2 = Console.ReadLine();
+        spelare2 = new spelare(Console.ReadLine());
+        pve = false;
     }
     OneOrTwo = false;
 }
 
-//List<string> antalSpelare = new List<string>();
+List<string> antalSpelare = new List<string>();
 
 //string singelplayer = "1";
 //string multiplayer = "2";
 
-//Random random = new Random();
+Random random = new Random();
 
-//int firstRound = 0;
-//bool on = true;
+var firstRound = random.Next(0, 2);
 
-//firstRound = random.Next(0, 2);
+spelare firstPlayer = null;
+spelare secondPlayer = null;
 
-//while (on)
-//{
-
-//    if (firstRound == 0)
-//    {
-//        Console.WriteLine("Spelare 1 börjar");
-//    }
-//    else
-//    {
-//        Console.WriteLine("Spelare 2 börjar");
-//    }
-
-//    on = true;
-//}
+if (firstRound == 1)
+{
+    firstPlayer = spelare1;
+    secondPlayer = spelare2;
+}
+else
+{
+    firstPlayer = spelare2;
+    secondPlayer = spelare1;
+}
+Console.WriteLine("Spelare " + firstPlayer.namn + " börjar.");

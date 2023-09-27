@@ -2,6 +2,11 @@
 {
     public class spelare
     {
-        string namn = Console.ReadLine();
+        public string? namn;
+        public spelare(string namn)
+        {
+            this.namn = namn;
+        }
     }
+
 }
