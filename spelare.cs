@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TwoPlayer
 {
-    internal class spelare
+    public class spelare
     {
+        public string namm;
     }
 }

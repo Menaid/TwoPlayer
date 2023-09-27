@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace TwoPlayer
 {
-    internal class Drag
+    public enum Drag
     {
+        Sten,
+        Sax,
+        Påse
     }
 }
