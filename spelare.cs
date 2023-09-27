@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TwoPlayer
+﻿namespace TwoPlayer
 {
     public class spelare
     {
-        public string namm(Console.ReadLine());
-        
+        string namn = Console.ReadLine();
     }
 }
