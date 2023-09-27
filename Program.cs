@@ -66,4 +66,21 @@ else
     firstPlayer = spelare2;
     secondPlayer = spelare1;
 }
+
+
+
+for (int i = 0; i < 3; i++)
+{
+
+
+    if (firstPlayer.isBot)
+    {
+        var drag = (Drag)random.Next(0, 3);
+    }
+    else
+    {
+        Console.WriteLine("Välj ett av alternativen sten, sax, påse.");
+        string valDrag = Console.ReadLine();
+    }
+}
 Console.WriteLine("Spelare " + firstPlayer.name + " börjar.");
